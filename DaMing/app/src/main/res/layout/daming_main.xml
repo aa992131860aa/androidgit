@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#6699FF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="680dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:background="#283C65"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_tv_test"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:text="大明精益生产管理系统"
+            android:textColor="#F0F0F0"
+            android:textSize="45sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:text="Daming Lean Production System"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="680dp"
+        android:layout_height="442dp"
+        android:layout_gravity="center"
+        android:background="#C1D2FE"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="95dp"
+                android:background="#EEEEEE" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="440dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="28dp"
+                android:background="#FFFFFF"
+                android:digits="@string/add"
+                android:hint="用户名:"
+                android:inputType="textEmailAddress"
+                android:maxLength="16"
+                android:paddingLeft="4dp"
+                android:singleLine="true"
+                android:text="201"
+                android:textColor="#A59999"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="95dp"
+                android:background="#EEEEEE" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="440dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="28dp"
+                android:background="#FFFFFF"
+                android:digits="@string/add"
+                android:hint="密码:"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="4dp"
+                android:singleLine="true"
+                android:text="201abc"
+                android:textColor="#A59999"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="95dp"
+                android:background="#EEEEEE"
+                android:gravity="center"
+                android:text="IP:端口"
+                android:textColor="#A59999"
+                android:textSize="28sp" />
+
+
+            <EditText
+                android:id="@+id/daming_ip"
+                android:layout_width="340dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="28dp"
+                android:background="#FFFFFF"
+                android:hint="IP：端口"
+                android:maxLength="26"
+                android:paddingLeft="4dp"
+                android:singleLine="true"
+                android:text="60.191.233.246:1024"
+                android:textColor="#A59999"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/daming_btn_login"
+            android:layout_width="187dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.71"
+            android:background="@drawable/btn_seletor"
+            android:text="登 录"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</LinearLayout>

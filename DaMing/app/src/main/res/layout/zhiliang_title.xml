@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/title_tv_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/biankuan_main"
+        android:padding="5dp"
+        android:gravity="center"
+         android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/title_tv_no"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/biankuan_main"
+        android:layout_weight="1.5"
+         android:textSize="18sp"
+        android:padding="5dp"
+        android:gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/title_tv_source"
+        android:layout_width="0dp"
+        android:background="@drawable/biankuan_main"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:padding="5dp"
+         android:textSize="18sp"
+        android:gravity="center"
+       />
+
+    <TextView
+        android:id="@+id/title_tv_description"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/biankuan_main"
+        android:layout_weight="6"
+         android:textSize="18sp"
+        android:padding="5dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/title_tv_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/biankuan_main"
+        android:layout_weight="1"
+        android:padding="5dp"
+         android:textSize="18sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

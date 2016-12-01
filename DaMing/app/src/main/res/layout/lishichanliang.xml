@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+	 <ImageView 
+            android:id="@+id/img_fanhui001"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/fanhui"
+            />
+        <ImageView
+            android:id="@+id/btn_img_daming"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/damingtupian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="48dp"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                 android:layout_marginTop="19dp"
+                android:layout_height="wrap_content"
+                android:text="产品历史产量统计图"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:text="Products history production statistics  "
+                android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    />
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                     android:gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="17sp"
+                    />
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<View 
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#C00000"
+    />
+<ImageView 
+    android:id="@+id/lishicl_iv_month"
+    android:layout_width="match_parent"
+    android:layout_height="0dp" 
+    android:layout_weight="1"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:scaleType="fitXY"
+    android:visibility="gone"
+    />
+    <WebView
+        android:id="@+id/lishicl_wv_month"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        />
+<ImageView 
+     android:id="@+id/lishicl_iv_year"
+    android:layout_width="match_parent"
+    android:layout_height="0dp" 
+    android:layout_weight="1"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:scaleType="fitXY"
+    android:visibility="gone"
+    />
+    <WebView
+        android:id="@+id/lishicl_wv_year"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

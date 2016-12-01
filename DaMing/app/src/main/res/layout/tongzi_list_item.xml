@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal" >
+         <ImageView
+            android:id="@+id/browser_tv_flag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/browser_tv_tzid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="15dp"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/browser_tv_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:text="通知内容"
+            android:textSize="22sp"
+             />
+          
+
+        <TextView
+            android:id="@+id/browser_tv_fbbm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+                        android:textSize="22sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="材料部" />
+
+        
+
+        <TextView
+            android:id="@+id/browser_tv_tzsj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+                        android:textSize="22sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="2015-12-22" />
+    </LinearLayout>
+
+  
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

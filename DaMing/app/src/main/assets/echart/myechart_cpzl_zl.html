@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <style>
+        html,body { height:100%; width:100%; margin:0; padding:0;align:left;valign:left;}
+    </style>
+</head>
+<body>
+<div id="main"
+     style="height:100%;width:100%;border:0px;text-align:left;align:left;valign:left;"></div>
+<!-- ECharts单文件引入 -->
+<script src="./js/echarts.js"></script>
+<script type="text/javascript">
+    //初始化路径
+    var myChart;  
+     require.config({
+            paths: {
+                echarts: './js'
+            }
+        });
+    //  通用属性定义
+    var options = {  
+                title : {  
+                    text : "Echart"
+                },  
+                tooltip : {  
+                    show : false
+                },   
+                toolbox : {  
+                    show : false
+                },  
+            }; 
+
+
+        //创建折线图
+        function createLineChart(dataArray,dataArray1,scrq,title1){
+        options = {
+         legend: {
+        x:'right',
+        orient:'horizontal',
+        data:['计划达成率', '班产达成率']
+    },
+     grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+       title: {
+                x:'left',
+                text: title1
+            },
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : scrq
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'计划达成率',
+                type:'line',
+ itemStyle : { normal: {label : {show: true, position: 'left',   textStyle : {
+                            color: 'black'
+                        }}}},
+                data:dataArray
+             },
+             {
+                name:'班产达成率',
+                type:'line',
+itemStyle : { normal: {label : {show: true, position: 'right',   textStyle : {
+                            color: 'black'
+                        }}}},
+                data:dataArray1
+             }
+            ]
+        };
+    }
+
+    //创建柱状图
+        function createBarChart(dataArray,title1){
+
+       options = {
+
+       tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        x:'right',
+        orient:'horizontal',
+        data:['材料-气孔','材料-外观','尺寸-设备','尺寸-夹具','尺寸-检具','人为因素','调机废品']
+    },
+       title: {
+                x:'left',
+                text: title1
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data :  ['1月','2月','3月','4月','5月']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'损失数量',
+                    type:'bar',
+                   itemStyle : { normal: {label : {show: true, position: 'inside',   textStyle : {
+                            color: 'black'
+                        }}}},
+                    data:dataArray
+
+                }
+            ]
+        };
+                    
+    }
+ //创建柱状图
+        function createBarChart(dataArray,dataArray1,dataArray2,dataArray3,title1){
+
+       options = {
+
+       tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        x:'right',
+        orient:'horizontal',
+        data:['完成数量', '工废数','客户投诉','停机数']
+    },
+       title: {
+                x:'left',
+                text: title1
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data :  ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'完成数量',
+                    type:'bar',
+                     stack: '总量',
+                   itemStyle : { normal: {label : {show: true, position: 'inside',   textStyle : {
+                            color: 'black'
+                        }}}},
+                    data:dataArray
+
+                },
+                  {
+                    name:'工废数',
+                    type:'bar',
+                     stack: '总量',
+                    itemStyle : { normal: {
+
+                          label : {show: true, position: 'bottom',   textStyle : {
+                            color: 'black'
+                        }}}},
+                    data:dataArray1
+
+                }
+                ,
+                  {
+                    name:'客户投诉',
+                    type:'bar',
+                     stack: '总量',
+                    itemStyle : { normal: {
+
+                          label : {show: true, position: 'top',   textStyle : {
+                            color: 'black'
+                        }}}},
+                    data:dataArray2
+
+                }
+                ,
+                  {
+                    name:'停机数',
+                    type:'bar',
+                     stack: '总量',
+                    itemStyle : { normal: {
+
+                          label : {show: true, position: 'left',   textStyle : {
+                            color: 'black'
+                        }}}},
+                    data:dataArray3
+
+                }
+            ]
+        };
+
+    }
+    //创建饼状图
+        function createPieChart(dataArray){
+        options = {
+        series : [
+            {
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '60%'],
+                data:[
+                    {value:335, name:'直接访问'},
+                    {value:310, name:'邮件营销'},
+                    {value:234, name:'联盟广告'},
+                    {value:135, name:'视频广告'},
+                    {value:1548, name:'搜索引擎'}
+                ]
+            }
+        ]
+        };
+    }
+
+
+        function createChart(chartKind,dataArray,title1){
+            if (chartKind=='line') {
+                doCreatChart(createLineChart(dataArray));
+            };
+            if (chartKind=='bar') {
+                doCreatChart(createBarChart(dataArray,title1));
+            };
+            if (chartKind=='pie') {
+                doCreatChart(createPieChart(dataArray));
+            };
+
+
+        }
+
+         function createChart(chartKind,dataArray,dataArray1,title1){
+            if (chartKind=='line') {
+                doCreatChart(createLineChart(dataArray));
+            };
+            if (chartKind=='bar') {
+                doCreatChart(createBarChart(dataArray,dataArray1,title1));
+            };
+            if (chartKind=='pie') {
+                doCreatChart(createPieChart(dataArray));
+            };
+
+
+        }
+
+        function createChart(chartKind,dataArray,dataArray1,dataArray2,dataArray3,title1){
+            if (chartKind=='line') {
+                doCreatChart(createLineChart(dataArray,dataArray1,scrq,title1));
+            };
+            if (chartKind=='bar') {
+                doCreatChart(createBarChart(dataArray,dataArray1,dataArray2,dataArray3,title1));
+            };
+            if (chartKind=='pie') {
+                doCreatChart(createPieChart(dataArray));
+            };
+
+
+        }
+    
+        function doCreatChart(specificChartFunction){
+
+            require(
+            ['echarts','echarts/theme/macarons','echarts/chart/line',
+            'echarts/chart/bar','echarts/chart/pie'
+            ],
+            function(ec,theme){
+            myChart =ec.init(document.getElementById('main'),theme);
+            myChart.showLoading({  
+                text : "图表数据正在努力加载..."  
+            }); 
+            specificChartFunction;
+            myChart.setOption(options); //先把可选项注入myChart中  
+            myChart.hideLoading(); 
+            }
+        );
+        }
+
+ 
+    //createChart('line',[89,78,77]);
+    //createChart('bar',[89,78,77]);
+    //createChart('pie',[89,78,77]);
+
+
+</script>
+</body>

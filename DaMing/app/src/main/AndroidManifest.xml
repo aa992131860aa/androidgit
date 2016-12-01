@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daming_text"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.daming.app.MyApplication"
+        >
+
+        <activity
+            android:name="com.example.daming_text.MainActivity"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.daming_text.yemianer2"></activity>
+        <activity
+            android:name="com.example.daming_text.yemianer"
+            >
+
+
+        </activity>
+        <activity android:name="com.example.daming_text.TongZiActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            >
+
+        </activity>
+        <activity android:name="com.example.daming_text.TextActivity2">
+
+        </activity>
+        <activity
+            android:name="com.example.daming_text.chanxianjiaohu"/>
+        <activity android:name="com.example.daming_text.chengyuanxinxi"/>
+        <activity android:name="com.example.daming_text.chanpinjiaohu"/>
+        <activity android:name="com.example.daming_text.damingguanli"/>
+        <activity android:name="com.example.daming_text.chanxianxinxi"/>
+        <activity android:name="com.example.daming_text.shengchanPC"/>
+        <activity android:name="com.example.daming_text.chanxianzhiliang">
+        </activity>
+        <activity android:name="com.example.daming_text.chanxianjiaohuo"/>
+        <activity android:name="com.example.daming_text.yuangongdangan"/>
+        <activity android:name="com.example.daming_text.peixunjilu"/>
+        <activity android:name="com.example.daming_text.Anquanlvli"/>
+        <activity android:name="com.example.daming_text.laodongjilv"/>
+        <activity android:name="com.example.daming_text.tuzhiwenjian"/>
+        <activity android:name="com.example.daming_text.zuoyezhibiao"/>
+        <activity android:name="com.example.daming_text.zhiliangfenxi"/>
+        <activity android:name="com.example.daming_text.lishichanliang"/>
+        <activity android:name="com.example.daming_text.biaozhunzuoye"/>
+        <activity android:name="com.example.daming_text.AnquanActivity"/>
+        <activity android:name="com.example.daming_text.JianyanjilvActivity"/>
+
+    </application>
+
+</manifest>

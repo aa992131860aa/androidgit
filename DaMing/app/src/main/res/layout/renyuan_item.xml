@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/renyuan_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:background="@drawable/biankuan_main"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="日期"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/renyuan_pro"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:background="@drawable/biankuan_main"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="产品编码"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/renyuan_come"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/biankuan_main"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="数据来源"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/renyuan_request"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/biankuan_main"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="问题描述"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/renyuan_deal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/biankuan_main"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="处理"
+        android:textStyle="bold" />
+</LinearLayout>
